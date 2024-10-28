@@ -1,9 +1,15 @@
 {
   "name": "turbo-import-subpath",
-  "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@9.12.2",
+  "imports": {
+    "#*": [
+      "./*.ts",
+      "./*.tsx"
+    ]
+  },
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
